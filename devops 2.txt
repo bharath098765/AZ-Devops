@@ -1,0 +1,96 @@
+Devops stages: 
+	continous development :
+	
+		it is the capacity of the team to continously develop the product as per business requirement.
+		without devops day to day activity:
+		coding
+		build the code
+		testing
+		create artifacts
+		promote changes to higher env for further development
+		notify team to pick the code
+		
+		devops`: 
+		code the application-->improve the productivity
+		
+		automated
+		build the code(compiling the code )
+		testing
+		create artifacts(binaries which are executable to target environment)
+		promote changes to higher env for further development
+		notify team to pick the code(slack)
+		
+	continous integration
+		it is the capacity of the development team to continously integrate the code for production environment
+	
+	continous testing
+		this is most important phase
+		automation
+	
+	continous delivery
+		manual approval is needed
+		banking application
+		they take areound 4 to 6 hrs of non bzness hrs
+		
+	continous deployment
+		netflix, prime
+		no downtime
+		automated
+		matured level of devops
+		
+	contionus monitoring
+		two type of monitoring
+			infra level monitoring
+				www. aha.com
+				the page is not responding
+				their network problem
+				netwrok traffic
+				memory, cpu utilisation
+			
+			application level monitoring
+				bug in application
+				
+	Devops tools:
+		development:
+		 For this we use IDE(integrated development environment):
+		  VS code, VS, Pycharm
+		  these tools improve the productivity of developers to code better
+		  
+		aftr code is biuilt , thenm it can be integrated to SCR(source code repository) like github
+		once the code is updated, we use CI tools like jenkins , gitlab- CI
+		
+	testing : selenium
+	CD: orchestration tools like k8 for deployment, docker swarm
+	 container: indepedent OS
+	
+	monitoring:
+		prometheus, grafana, cloud watch (by AWS), azure monitor
+		
+
+categorise the tools:
+
+	open source tools/self managed tools(installation, security is our responsibility)
+		jenkins
+		gitlab
+		github
+		bitbucket
+		Docker
+		kubernetes
+		prometheus 
+		gragana, data dog
+	managed tools(cloud provider take care of installation, security)
+		AWS: infrastructure services
+		Azure: dedicated devops services
+		GCP
+		
+	
+	
+		
+	
+		
+	
+		  
+		  
+		  
+		
+		
