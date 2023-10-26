@@ -1,0 +1,96 @@
+SDLC: software development life cycle
+requirement analysis 
+design
+coding/ development
+testing 
+implementation/deployment
+maintenance/monitoring
+
+www.flipkart.com
+modules
+sign up: frontend design, application logic, backend design
+sign in
+search
+add to cart
+place order
+make payment
+track order
+
+monolithic approach:
+we cannot work on modules
+everything is tightly coupled(lots of dependencies on each other)
+modules cannot be independently developed, tested or deployed
+it is linear in nature
+
+agile method:
+module1/ iteration1:
+	requirement analysis 
+	design
+	coding/ development
+	testing 
+	implementation/deployment
+	maintenance/monitoring
+
+module2/ iteration2:
+	requirement analysis 
+	design
+	coding/ development
+	testing 
+	implementation/deployment
+	maintenance/monitoring
+
+in agile , new requirements can be accomodated
+we can design, code, test but cannot deploy automatically.
+
+we can achieve continous development
+continuous integration
+continuous testing
+continuous delivery
+but continuous deployment is not possible.
+
+Difference between continous delivery and continous deployment:
+when manual approval is needed for the release , then it is continous delivery
+when release of application is automated, then it z mcontinuous deployment
+
+why manual intervention is needed for releasing to prod env?
+agile method follows task based approach
+at last , iterations will be thoroughly reviewed
+and it will be deployed to prod environment
+
+Devops :it is same as agile method, but from day 1 proper collaboration between tesms
+complete transparency is there.
+
+no flaw in app
+
+teams have collaboratedto achieve continous development, continous integration, continous testing, continous deployment, continous monitoring in fully automated fashion
+
+what is devops?
+it is a software development stratergy which helps to promote the collaboration between teams 
+everything is achieved using automated tools 
+time savoing approach 
+
+teams involved in SDLC:
+
+devops team : 
+	infra team
+	app development team
+	testing 
+	release management
+	production support team
+	prod monitor team 
+	security team
+
+Devops stages: 
+	continous development 
+	continous integration
+	continous testing
+	continous delivery 
+	continous deployment
+	contionus monitoring
+
+git hub account: www.git.com
+ 		create account
+
+
+
+
