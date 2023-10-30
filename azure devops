@@ -1,0 +1,74 @@
+the stages of azure devops	
+	1. plan
+	2. develop
+	3. delivery/deployment
+	4. Operations
+	
+	planning:
+	 for any requirement , time it takes, schedule , cost estimation
+	 programming language
+	 database 
+	 platform
+	 roles of resources
+	 how to plan testing
+	 visual sessions using dash boards
+	 
+	jira
+	
+	
+development:
+ based on architecture, developers create source code
+  after the code is created , they will manage the source code repository
+  azure repository
+  
+  git hub: remote repository  and git: local repo
+	centralised n distributed Source code is there
+  
+  
+  testing QA , UAT
+  
+  delivery : to increase the frequency of release
+  
+  operations: continous monitoring/ maintenance
+  feedbacks 
+  zero downtime and sopeed shud be higher
+  
+  
+  
+  1. build and maintin back log(pending task )
+  user stories/task : 
+  
+  2. host code repo
+  azure supports 2 types of repos:
+  centralised : 
+  central server, repo is there on that server. developer shud login to the central server
+  whole data will be lost if repo is deleted
+  TFVC(team foundation version control)
+ 
+  
+  
+  distributed: 
+	remote repo can be cloned
+  once changes are done.push the changes to remote repos
+  no need to always online
+  remote server clone is available
+  
+ git hub
+ 
+ 3. achieve CI
+ 4. achieve CD
+  azure pipeline
+  
+ 5. automate testing
+	azure test plan. 
+6. implement CI /CD pipeline from code in to code deployemnt
+	Az artifacts(executable)
+ 
+ 
+ azure boards:
+ 1. manage software project
+ 2. supports scrum and kanban method 
+ 3.customise the dash boards
+ 4. create reports
+ 5. trace user stories, backlog items, bugs associated with the project 
+ 
