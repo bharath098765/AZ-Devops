@@ -1,0 +1,43 @@
+local repo: getting ur in local system
+
+remote repo: online repo
+
+AAD: Azure active directory
+RBAC: Role based access control(user name n passwords, )
+
+LDAP(it is used for authentication purpose. in this username n password saved)
+all the info about the person in those servers
+
+global notification: it is to notify all the activities of the developers . eithr MS teams or mail notification z used
+
+SSO:single sign on 
+v can get access to devops. RBAC decides the permissions
+
+distribution list(DL):it will have the all the team member names
+
+epic: it is large piece of work
+	planning fr a whole month, ythn the activities of the developers will be assigned by creating epic
+	
+issue: blockers/ dependencies to run any task. all these things are defined in issue list
+bug: something which arise due to task error
+
+
+agent pools:this is the node where pipelines are run. that is called agent pool
+	before running pipeline, v shud create nodes
+	infra team will allocate nodes based on the requirement
+	
+	
+migration from GITHUB to AZpipelines:
+	- detailed analysis of existing github env
+	- identify n capture all the dependencies
+	- identify the list of teams 
+	- identify access level to the team
+	- take sample repo n move from git hub to az pipeline
+	
+sprint: weekly task
+
+queries: this to changr , add, or delete the data from data based. it can integrate data with other databases
+	
+
+
+ 
