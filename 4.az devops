@@ -1,0 +1,25 @@
+azure boards
+	create work items n can define backlogs, sprints(it is a small set of work to complete), queries
+	it is used to manage software projects
+	create reports
+	used to trace user stories, bug associated with the project 
+	
+azure repo
+	this is to version control(tracking or managing the source code)
+	support git n TFVC(team foundation version control)
+	it is distributed version control system
+	
+Az pipeline
+	it can automatically build and test code projects n make them availabl to end user
+	it combines CI and CD 
+az test plan
+	QA, UAT testing can be done using test plan
+	at each n every levery level, feed backs r taken n processed accordingly
+	
+az artifacts
+	create packages 
+	executable components of source code
+	
+	we can move our code from artifact library to docker(image, container)
+	n from docker, it goes to kubernetes
+	AKS: azure kubernets services
