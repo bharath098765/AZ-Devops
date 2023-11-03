@@ -1,0 +1,147 @@
+local repo: getting ur in local system
+
+remote repo: online repo
+
+AAD: Azure active directory
+RBAC: Role based access control(user name n passwords, )
+
+LDAP(it is used for authentication purpose. in this username n password saved)
+all the info about the person in those servers
+
+global notification: it is to notify all the activities of the developers . eithr MS teams or mail notification z used
+
+SSO:single sign on 
+v can get access to devops. RBAC decides the permissions
+
+distribution list(DL):it will have the all the team member names
+
+epic: it is large piece of work
+	planning fr a whole month, ythn the activities of the developers will be assigned by creating epic
+	
+issue: blockers/ dependencies to run any task. all these things are defined in issue list
+bug: something which arise due to task error
+
+
+agent pools:this is the node where pipelines are run. that is called agent pool
+	before running pipeline, v shud create nodes
+	infra team will allocate nodes based on the requirement
+	
+	
+migration from GITHUB to AZpipelines:
+	- detailed analysis of existing github env
+	- identify n capture all the dependencies
+	- identify the list of teams 
+	- identify access level to the team
+	- take sample repo n move from git hub to az pipeline
+	
+sprint: weekly task
+
+queries: this to changr , add, or delete the data from data based. it can integrate data with other databases
+	
+
+
+                 upload 7:
+ Repo
+
+local machine					git on local machine											remote server
+working directory 			staging area 			local repo				remote repo
+					add						commit					push 
+	working directory:
+	it is the physical location to create or delete a file
+	
+	to create a version, v have to save it in local repo
+	before commiting to local repo, we have to save in staging area
+	
+	staging area n local repo is managed by git 
+	
+	git add <file name>
+	git commit -m "commit1"
+	
+	git push
+	
+remote repo can be github, bitbucket, az repo , aws code comit 
+	
+git commands:
+	git add: used to add the changes from working directory to staging area
+	git commit:used to move the change from staging area to local repo
+	git push : used to move change from local repo to remote repo
+	git init: initialise a repo
+	git clone: getting the copy of remote repo to local repo
+	git fetch/ pull: both commands are used to handle incremental changes
+		fetch:it will bring changes to local repo
+		pull:it will bring changes to working directory and local repo
+		git pull= git fetch + git merge
+		clone  10 lines 
+				+5lines
+		clone: 15 lines
+		git pull: +5 lines
+	git fork: copy from one remote repo to another remote repo
+	
+	
+	
+	
+	putty, 
+	mobaxterm
+	
+	how to create local repo?
+		git init: it will create default branch called master/main
+				.git folder in the directory 
+				it wil make the direcory as repo
+				
+		rm -rf .git: it will remove git folder but the content in the working directory will b there
+		
+		git log: the details of the commit. we have commit id, author, time
+		git log --oneline:
+		git status: it gives the status of working directory n staging area
+		
+		
+		linux commands:
+		echo "message": print on the screen
+		cat <file name>: enter to the file n print the content
+		cd: change directory
+		mkdir: make directory
+		ls: list files/folders
+		ls -a : list all hidden files/folders 
+		rm -rf <directory name>: forcefully remove the complete directory
+		
+		
+		commands:
+		
+	1	echo "hello" >> file1.txt
+    2  cat file1.txt
+    3  echo hi
+    4  mkdir dir1
+    5  cd dir1
+    6  pwd
+    7  git init
+    8  ls
+    9  ls -a
+   10  git status
+   11  echo "hi " >> file2.txt
+   12  git status
+   13  git add file2.txt
+   14  git status
+   15  git commit -m "my first commit"
+   16  git log
+   17  echo "how are you" >> file3.txt 
+   18  echo "hello" >> file4.txt
+   19  git status
+   20  git add file3.txt file4.txt
+   21  gi status
+   22  git status
+   23  git commit -m "my latest commits"
+   24  git status
+   25  rm -rf .git/
+   26  ls -a
+   27  git init
+   28  ls -a
+   29  cd ..
+   30  history
+				
+		
+	
+	
+		
+	
+	
+
