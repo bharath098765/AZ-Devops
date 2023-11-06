@@ -1,0 +1,129 @@
+git ls-files: gives list of files in local repo
+
+.gitignore:used to ignore the files from tracking
+    like secrets
+      passwords
+      app configurations
+
+
+reset and revert
+
+git reset <commit id>: undo the changes
+soft reset: remove the changes only from local repo
+  	the file will be present in staging n wroking directory
+      git reset --soft <commit id>
+mixed reset: remove file from local repo and staging area
+	    git reset --mixed <commit id>
+	
+hard reset: remove file from working directory as well
+	  git reset --had <commit id>
+
+
+cm1, cm2, cm3, cm4, cm5
+git reset cm2 
+final output:
+cm1
+
+revert:
+it removes only the single commit . it takes the file back to the staging area
+
+cm1, cm2, cm3, cm4, cm5
+git revert cm2
+final output : 
+cm1, cm3, cm4, cm5
+
+
+
+
+parallel development : 
+
+case1
+
+master : cm1, cm2, cm3
+feature1: cm1, cm2, cm3, f1
+
+after merge: 
+ master : cm1, cm2, cm3, f1
+
+case2
+master : cm1, cm2, cm3
+
+dev1 :cm1, cm2, cm3, f1, f2
+	feature1: cm1, cm2, cm3, f1
+	feature2: cm1, cm2, cm3, f2
+after merge 
+ master :cm1, cm2, cm3, f1, f2
+
+case3: 
+master: cm1, cm2, cm3
+integration : cm1,. cm2, cm3, dev1, dev2
+
+dev1 :cm1, cm2, cm3, f1, f2
+	feature1: cm1, cm2, cm3, f1
+	feature2: cm1, cm2, cm3, f2
+
+dev2 :cm1, cm2, cm3, f1, f2
+	feature1: cm1, cm2, cm3, f1
+	feature2: cm1, cm2, cm3, f2
+
+master: cm1, cm2, cm3
+
+release branch : cm1, cm2, cm3, team1, team2
+
+team 1
+integration : cm1,. cm2, cm3, dev1, dev2
+dev1 :cm1, cm2, cm3, f1, f2
+	feature1: cm1, cm2, cm3, f1
+	feature2: cm1, cm2, cm3, f2
+
+dev2 :cm1, cm2, cm3, f1, f2
+	feature1: cm1, cm2, cm3, f1
+	feature2: cm1, cm2, cm3, f2
+
+team 2
+integration : cm1,. cm2, cm3, dev1, dev2
+dev1 :cm1, cm2, cm3, f1, f2
+	feature1: cm1, cm2, cm3, f1
+	feature2: cm1, cm2, cm3, f2
+
+dev2 :cm1, cm2, cm3, f1, f2
+	feature1: cm1, cm2, cm3, f1
+	feature2: cm1, cm2, cm3, f2
+
+working with branches:  
+
+git branch: give us the list of branches
+git branch <branch name>: create a new branch. but the head wil b at master 
+git switch <branch name>: switch to that branch
+git switch -c <branch name> : new branch created . the head shift to new branch  
+git checkout -b <branch name>: new branch created . the head shift to new branch 
+git merge <branch name>: it used to merge the branches. it is used from the target branch
+	        feature1 changes
+        	git switch master
+        	git merge feature1
+
+why conflict occurs?
+when we try to update same file in target branch , then merge conflict occurs
+
+how to resolve it ?
+identify the file that is causing conflict 
+review the content of the file
+decide the changes to be kept 
+update the file accordingly 
+perform git add and commit the changes
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
