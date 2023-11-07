@@ -25,7 +25,7 @@ final output:
 cm1
 
 revert:
-it removes only the single commit . it takes the file back to the staging area
+it removes only the single commit . it takes the file back to the staging area. it is like reset hard but the commit can be reverted 
 
 cm1, cm2, cm3, cm4, cm5
 git revert cm2
