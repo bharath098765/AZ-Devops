@@ -1,4 +1,4 @@
-git ls-files: gives list of files in local repo
+git ls-files: gives list of files staged in the repo
 
 .gitignore:used to ignore the files from tracking
     like secrets
