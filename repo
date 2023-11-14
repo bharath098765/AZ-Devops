@@ -1,0 +1,57 @@
+ repo:
+ continous development
+ the developer continously perform the code changes n is able to use in higher env
+ 
+ cherry pick : pick any selected commit
+ set auto complete: it directlyu merge to master branch 
+ complete: rebase n complete, squash complete
+ 
+types of analysers :
+static analysers:
+	it examines the code to identify issues in logic or technique
+	sonarqube analyser
+
+	it can scan at code and agt image level
+	quality gating: the metrics for checking the code quality
+	
+	it can be used to check test plans whether they hv been completed or not
+	metrics for test is test coverage
+	
+	
+dynamic analysers:
+it is in the production env. it wil take care of threats n vulnerabilities to the code.
+selenium , JMeter
+
+
+what is devops pipeline?
+it is a set of automated processes
+it allows developers and Devops team to efficiently compile the solution, 
+generate the installer, run the test n deploy installer to the prod env
+
+stages of pipeline:
+
+	code development
+	testng 
+	code deployment to server
+	testng & feedbacks
+	fixing issues(if any)
+	deploy the code to prod env
+	monitoring the prod server
+	raise alerts in case of prod issues
+	code development
+
+azure pipeline:
+it can be used to build, test n make the project avaiulbl to other users
+
+it can work with multiple language
+integrate with SCM tools like git, svn , tfvc
+
+
+
+
+
+ 
+ 
+
+
+
