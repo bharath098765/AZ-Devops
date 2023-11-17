@@ -1,0 +1,106 @@
+Azure pipeline flow:
+
+	SCM checkout
+	azure repos
+	Azure test plans
+	azure pipelines
+	azure web app
+	azure application insights(this gives feedback)
+	review
+	coding
+
+
+Az pipeline benefits:
+	it can work with any language
+	can deploy at diff env at the same time 
+	integrates withn azure deploymentas
+	built on windows, mac Os, Linux
+	integrate with gity Hub
+	work with open source projects
+	
+Agents:
+ they are the VMs where we run our pipelines
+ gitlab runners, github actions, az pipelines
+ 
+ Types :
+	Hosted agent: the agents which are provided by cloud provider
+	private agent : these are the vms which we can create and install all required tools 
+					we are the sole controller of this
+					
+Build Agent:
+	Vm which run build process
+	it is used to build n deploy the code
+	it can be MS hosted or Self hosted
+	Build agents can be either on the host machine or in container
+	Runs one job at a time
+	
+MS hosted Agents:
+	the vm will b discarded after one use to free up the resources
+	every time you run a pipeline, u will get a fresh Vm
+	user have to provide build configurations
+	MS take care of the maintenance , upgradation for u
+	
+limitations of MS hosted agents:
+	Build duration can be for 6 Hrs
+	limited Disk space 
+	user can not sign in the hosted agent
+	
+	
+self hosted agent:
+	more control to the user for build n deploymentas
+	user can customise the environment as per app requirement
+	user can take snap shot 
+	cache is available
+	
+	
+agent pool: multiple agent servers are called agent pool. 
+			when any agent is unhealthy, we can re route the traffic
+			
+		
+in agents, either we can work in sequence or parallel 
+
+
+vm1: java based
+vm2: python
+vm3: .net
+
+if no agents are available, job will be in waiting state.
+
+load balancing: a process of traffic distribution in case of heavy inbound traffic. round robin
+
+
+agent pool is used :
+	load balancing
+	to provide needed dependencies to the job
+	
+microsoft hosted CI/CD
+	hosted agents will be needed to run the job
+	if u want run job, u need to use parallel jobs
+	
+	yaml:
+	
+	pipeline
+	stage
+	job
+	steps
+	
+	
+	
+hub.docker.com
+
+
+
+
+
+	
+
+	
+
+	
+
+
+					
+
+	
+
+
