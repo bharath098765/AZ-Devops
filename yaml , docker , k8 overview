@@ -1,0 +1,139 @@
+pull and push event :
+to avoid any conflict, the code wil b pulled to local repo. 
+the conflict wil b resolved if any and then , 
+the changes made by us will b added n pushed to the remote repo
+
+YAML file :
+
+key value pair  in which stages, job and steps wil b there
+	pipeline
+		stage A
+			job 1
+				steps 1.1
+				step 1.2
+				step 1.3
+				
+			job 2
+				steps 2.1
+				step 2.2
+				step 2.3
+		stage B
+		
+we can create YAML file using GUI as well as coding
+
+docker:
+
+CI
+SCM checkout 
+build
+unit test
+create artifact
+
+CD
+copy the artifact from 
+	source (it can be dev and build server where v perform build) to 
+	target (it can be QA, UAT server, production env)
+	
+assume that mywebapp 
+build is done using
+	tomcat 8.0
+	opnjdk11
+
+in target env,
+	tomcat9.0
+	oraclejdk1.8
+	
+	containerisation
+	it is a process of packaging the app/ service artifact along with the dependencies
+	after completion of war file, package is created out of it.
+	
+	in package, war file along with the dependencies wil b there 
+	mywebapp .war
+	tomcat 8.0
+	opnjdk11
+	
+	mywebapp_package: v 1.0
+	
+terms:
+
+	image: 
+		it is the static file composed of many layers of app architect and its dependencies
+		it is non executable. u cannot directly edit the image
+		packages are also known as images
+		
+	
+	
+	container:
+		 to run the images, they are needed
+		 they are the executable form of image
+		 they are not permanent
+	 
+	container registry: 
+		 used to store the image
+		 v can do version control and manage the image using container images
+		 docker hub is the container registry in docker hub
+		 
+		 on base image, layers wil b added by making it container 
+		 n again that wil b saved as image new version
+		 
+layers are the incremental changes made to the image
+
+layers to create a web application, QA server
+
+	identify the web app whther it z tomcat or nginx
+
+	based on server, reqd tools wil b installed
+	v create environment variable fr jdk
+	instal tomcat
+	start tomcat
+	
+	
+AWS for build server
+ci cd using AZ pipelines
+
+build server will b created in aws n wil act as self hosted agent in azure pipeline
+
+
+commands:
+
+Docker pull: is used to download image in local machine 
+Docker run: is used to strt the container
+docker start: used to restrt a stopped container
+docker exec: is used to login/ enter to the container
+docker build & docker commit : used to create images
+
+docker build create image frm docker file . it create new image frm scratch 
+docker commit: used to create new image frm container
+docker compose: with YAML script, multipl containers can b created.
+				to run more than one container as single service, docker compose is used
+
+signup module
+
+	c1, c1, c1,: frnt end design: user interface to interact with the app
+	c2, c2, c2: app logic: it wil b reviewd n validated 
+	c3, c3, c3: backend (db): if valid details r there, then data wil b stored in db
+	
+docker swarm:
+	 main purpose is to ensure high availibility of containers.
+	 container orchestrattion tool
+	 
+	 it create replicas of the container(copies of the container)
+	 
+	 master node:
+		services will be scheduled 
+	worker node: services will run
+		wn1
+		wn2
+		wn3
+		
+	replicas run in master n wrkr node
+	
+k8:
+	master node: etcd , api server, controller mnger, scheduler, cloud-controller-manager
+	wrker node: kubelet, kube proxy, CRI
+	
+diff btween docker swarm n k8:
+	 Docker swarm z only fr docker containers where as k8 support multiple containers(docker, linux, gcp)
+	 in k8 , app z deployed on wrker node only whereas in docker swarm, it z deployed master node as well
+	 k8 used fr heavy deployments. whereas docker swarm is used fr nlow level deployments
+	
